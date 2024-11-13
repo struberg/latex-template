@@ -1,0 +1,45 @@
+% Encoding: UTF-8
+
+% %! Author = Mark Struberg
+%! Date = 2024-11-10
+
+% Preamble
+\documentclass[12pt,a4paper]{article}
+
+% \usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[pdftitle={title},pdfauthor={author}, colorlinks=false, pdfborder={0 0 0}, pdfpagelabels=true]{hyperref}
+\usepackage[a4paper , lmargin = {2.5cm} , rmargin = {2.5cm} , tmargin = {2cm} , bmargin = {2cm}]{geometry}
+\usepackage{makeidx}
+\usepackage{csquotes}
+\usepackage[
+    backend=biber,
+    style=authoryear-icomp,
+    sortlocale=de_DE,
+    natbib=true,
+    maxbibnames=3,
+    url=false,
+    doi=true,
+    eprint=false
+]{biblatex}
+\addbibresource{wissarb1.bib}
+
+\title{REST - Fakten und Mythen}
+\author{Mark Struberg}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+    
+\section{some heading}
+
+\section{another section}
+with some text
+
+\printbibliography
+
+\end{document}
